@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Bristol maver';
-    src: url('"C:\Users\ucg_g\OneDrive\Imagens\SITE MARCELIO\fonts\Bristol maver.ttf"') format('ttf'),
-    /* Adicione outros formatos de fonte, se necessário */
-  }
 body {
     background-color: #000000;
     font-family: Bristol maver, sans-serif;
