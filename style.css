@@ -1,0 +1,388 @@
+body {
+  background-color: #000000;
+  font-family: Bristol Maver, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#Botao1 {
+  position: relative;
+  font-family: Bristol Maver, sans-serif;
+  padding: 5px 50px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 50px;
+  top: 20vw;
+  background-color: #be9847;
+}
+
+/*Logo na primeira pagina*/
+.image .barber-logo {
+  position: relative;
+  width: 234px;
+  height: auto;
+  top: 10vw
+}
+
+/*Segunda pagina Botoes*/
+#pagina2 .pagina {
+  display: flex;
+  flex-direction: column;
+  /* Alinha os itens verticalmente */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  margin: 5%;
+}
+
+#pagina2 button {
+  margin: 30px;
+  width: 340px;
+  height: 150px;
+  background-color: #be9847;
+  /* Cor de fundo do botão */
+  font-family: Bristol Maver, sans-serif;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  /* Preenchimento interno do botão */
+  text-align: center;
+  /* Centraliza o texto */
+  flex-direction: column;
+  align-items: center;
+  display: inline-flex;
+}
+
+#pagina2 .pagina button img {
+  flex-direction: column;
+  align-items: center;
+}
+
+#Opção3 {
+  justify-content: center;
+}
+
+/*Terceira pagina Serviços*/
+header {
+  background-color: #292c35;
+  width: 100vw;
+  /* Define a largura igual à largura da tela (viewport) */
+  height: 60px;
+  /* Define a altura como 100% para cobrir a altura da tela */
+  position: fixed;
+  /* Fixa o header na parte superior da tela */
+  top: 0;
+  /* Coloca o header no topo da tela */
+  left: 0;
+  /* Alinha o header à esquerda da tela */
+  z-index: 1000;
+  /* Ajusta a ordem de empilhamento para garantir que o header fique acima de outros elementos */
+}
+
+.header-img {
+  align-content: center;
+  padding: 10px;
+  width: 15%;
+  /* Garante que a imagem do header ocupe toda a largura do header */
+  height: auto;
+  /* Ajusta a altura automaticamente para manter a proporção */
+}
+
+#pagina3 .pagin {
+  display: grid;
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  font-family: Bristol Maver, sans-serif;
+  color: #be9847;
+  font-size: 25px;
+  margin: 5%;
+}
+
+#Botao2,
+#Botao3,
+#Botao4 {
+  display: fixed;
+  position: relative;
+  font-family: Bristol Maver, sans-serif;
+  padding: 5px 50px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #be9847;
+  margin: 0 auto;
+}
+
+.serviços-grid {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  justify-content: center;
+}
+
+.serviços-grid .Serviço1,
+.serviços-grid .Serviço2,
+.serviços-grid .Serviço3,
+.serviços-grid .Serviço4,
+.serviços-grid .Serviço5,
+.serviços-grid .Serviço6 {
+  text-align: center;
+}
+
+.serviços-grid .serviço-ativo {
+  position: relative;
+  overflow: hidden;
+  /* Garante que o overflow não ultrapasse os limites do serviço-ativo */
+}
+
+.serviços-grid img {
+  width: 100%;
+  /* Ocupa 100% da largura do elemento pai */
+  height: 100%;
+  /* Ocupa 100% da altura do elemento pai */
+  border-radius: 10px;
+  transition: filter 0.3s;
+  /* Adiciona uma transição suave para o efeito de desfoque */
+}
+
+.serviços-grid .serviço-ativo .serviço-info {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  font-size: 40px;
+  text-shadow: 0 1px #000000;
+  width: 100%;
+  /* Ocupa 100% da largura do elemento pai */
+  color: #ffffff;
+  /* Cor do texto */
+  text-align: center;
+  transition: opacity 0.3s;
+  /* Adiciona uma transição suave para a opacidade */
+}
+
+.serviços-grid .serviço-ativo:hover img {
+  filter: blur(5px);
+}
+
+.serviços-grid .serviço-ativo:hover .serviço-info {
+  display: block;
+}
+
+.texto-sugestivo {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Efeitos do botão barbeiros */
+.container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.expandButton {
+  border: none;
+  background-color: #be9847;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: width 0.8s;
+}
+
+.button-image {
+  width: 60px;
+  height: auto;
+  padding-top: 4px;
+  transition: transform 0.5s;
+  object-fit: cover;
+  /* Adiciona um ajuste de escala para cobrir a área da imagem */
+  object-position: center;
+  /* Centraliza a imagem na área designada */
+}
+
+.expandButton.expanded {
+  width: 300px;
+  /* ou qualquer largura desejada ao expandir */
+}
+
+/* Adicione essa regra para ajustar o texto dentro do botão expandido */
+.expandButton.expanded a .button-text {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  /* Adapte conforme necessário para ajustar o espaço entre a imagem e o texto */
+  font-family: Bristol Maver, sans-serif;
+  font-size: 30px;
+  color: #000000;
+  margin: 5%;
+  position: relative;
+  top: -20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Media queries para tamanhos mnores de tela */
+@media screen and (max-width: 500px) {
+  #pagina2 button {
+    width: 90%;
+    /* Ajuste conforme necessário */
+  }
+
+  .pagina {
+    padding-top: 15%;
+  }
+
+  .header-img {
+    width: 60%;
+    /* Ajuste conforme necessário */
+  }
+
+  #pagina3 .pagin {
+    padding: 5%;
+    /* Ajuste conforme necessário */
+  }
+
+  .serviços-grid {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+
+  #Botao1 {
+    top: 80vw;
+  }
+
+  /*Logo na primeira pagina*/
+  .image .barber-logo {
+    top: 40vw
+  }
+
+  .texto-sugestivo {
+    font-size: 18px;
+  }
+}
+
+.pagi {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.containe {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#imagemAtual,
+#imagemAtual2,
+#imagemAtual3 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 4px solid #be9847;
+  border-radius: 5px;
+  border-radius: 50px;
+}
+
+.exp {
+  text-align: justify;
+  font-size: 20px;
+  font-family: times new roman, sans-serif;
+  margin: 0;
+  padding: 5px;
+  padding-bottom: 50px;
+}
+
+.info-mapa {
+  text-align: center;
+  font-size: 25px;
+  color: #be9847;
+  margin: 0;
+  padding: 5px;
+}
+
+.mapa {
+  width: 100%;
+  height: 250px;
+  border-radius: 50px;
+}
+
+.info-loc {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Times New Roman', sans-serif;
+  margin-top: 0;
+  padding: 5px;
+}
+
+/* Sexta Página(Opção4)*/
+.pag {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.containe-barb {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding-bottom: 20px;
+}
+
+.info-foto1 img,
+.info-foto2 img,
+.info-foto3 img{
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border: 5px solid #be9847;
+  border-radius: 30px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.grupo1 {
+  justify-content: baseline;
+  align-items: right;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.grupo {
+  justify-content: baseline;
+  align-items: right;
+  padding: 10px;
+  margin: 0;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.social-media i {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #be9847;
+  font-size: 25px;
+  text-align: left;
+  font-family: 'Times New Roman', sans-serif;
+}
