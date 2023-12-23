@@ -341,7 +341,7 @@ a {
 .info-foto2 img,
 .info-foto3 img{
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   height: auto;
   border: 5px solid #be9847;
   border-radius: 30px;
