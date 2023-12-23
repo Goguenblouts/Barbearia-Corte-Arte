@@ -1,13 +1,13 @@
 body {
   background-color: #000000;
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   text-align: center;
   margin: 20px;
 }
 
 #Botao1 {
   position: relative;
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   padding: 5px 50px;
   font-size: 25px;
   cursor: pointer;
@@ -40,7 +40,7 @@ body {
   height: 150px;
   background-color: #be9847;
   /* Cor de fundo do botão */
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   font-size: 25px;
   border-radius: 10px;
   padding: 10px 30px;
@@ -91,7 +91,7 @@ header {
   display: grid;
   align-items: center;
   /* Centraliza os itens verticalmente */
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   color: #be9847;
   font-size: 25px;
   margin: 5%;
@@ -102,7 +102,7 @@ header {
 #Botao4 {
   display: fixed;
   position: relative;
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   padding: 5px 50px;
   font-size: 25px;
   cursor: pointer;
@@ -213,7 +213,7 @@ header {
   justify-content: center;
   margin-left: 10px;
   /* Adapte conforme necessário para ajustar o espaço entre a imagem e o texto */
-  font-family: Bristol Maver, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   font-size: 30px;
   color: #000000;
   margin: 5%;
@@ -293,7 +293,7 @@ a {
 .exp {
   text-align: justify;
   font-size: 20px;
-  font-family: times new roman, sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   margin: 0;
   padding: 5px;
   padding-bottom: 50px;
