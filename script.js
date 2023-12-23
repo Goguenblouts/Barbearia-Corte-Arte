@@ -52,8 +52,6 @@ function mostrarInfo(id) {
   serviços.forEach(outroServiço => outroServiço.classList.remove('serviço-ativo'));
   serviço.classList.add('serviço-ativo');
 }
-</script>
-<script>
 var imagens1 = ["https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/1%20descri%C3%A7%C3%A3o/img%20barber-1.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/1%20descri%C3%A7%C3%A3o/img%20barber-5.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/1%20descri%C3%A7%C3%A3o/img%20barber-7.jpg?raw=true"];
 var imagens2 = ["https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/2%20descri%C3%A7%C3%A3o/img%20barber-14.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/2%20descri%C3%A7%C3%A3o/img%20barber-15.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/2%20descri%C3%A7%C3%A3o/img%20barber-19.jpg?raw=true"];
 var imagens3 = ["https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/3%20descri%C3%A7%C3%A3o/img%20barber-29.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/3%20descri%C3%A7%C3%A3o/img%20barber-24.jpg?raw=true", "https://github.com/Goguenblouts/Barbearia-Corte-Arte/blob/main/pagina%204/3%20descri%C3%A7%C3%A3o/img%20barber-27.jpg?raw=true"];
