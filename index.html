@@ -205,7 +205,7 @@
           </div>
 
         </div>
-        <button id="Botao4">Voltar</button>
+        <button id="Botao4" onclick="voltarPagina()">Voltar</button>
       </div>
     </div>
 
@@ -284,7 +284,13 @@ function mudarImagem() {
 }
 // Configuração para mudar automaticamente a cada 5 segundos (5000 milissegundos)
 setInterval(mudarImagem, 5000);
-</script>
-    
-  </body>
+
+
+function voltarPagina() {
+    window.history.back();
+  } 
+  
+  </script>
+
+</body>
 </html>
